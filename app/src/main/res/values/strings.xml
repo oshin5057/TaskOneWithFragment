@@ -26,4 +26,6 @@
     <string name="enter_date">Enter Date</string>
     <string name="get_date">Get Date</string>
     <string name="initial_weight_value">0</string>
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
 </resources>

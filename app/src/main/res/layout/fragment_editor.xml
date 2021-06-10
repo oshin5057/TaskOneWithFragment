@@ -68,31 +68,18 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_margin="10dp">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:id="@+id/text_ip_et_weight_editor_fragment"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:hint="@string/enter_your_weight_in_kg"-->
-<!--                android:inputType="numberDecimal"-->
-<!--                android:maxLines="2"/>-->
-
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:padding="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/weight" />
+                android:text="@string/weight"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -101,50 +88,92 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/decrement_button"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@null"
-                    android:textSize="18sp"
-                    android:text="-" />
+                    android:id="@+id/btn_weight_decrement"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/background_circle_button"
+                    android:textSize="22sp"
+                    android:text="@string/decrement"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"/>
 
                 <TextView
                     android:id="@+id/weight_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:paddingLeft="8dp"
-                    android:paddingRight="8dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
                     android:text="@string/initial_weight_value"
                     android:textColor="@android:color/black"
                     android:textSize="22sp" />
 
                 <Button
-                    android:id="@+id/increment_button"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@null"
+                    android:id="@+id/btn_weight_increment"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/background_circle_button"
                     android:textSize="22sp"
-                    android:text="+" />
+                    android:text="@string/increment"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"/>
             </LinearLayout>
 
-        </RelativeLayout>
+        </LinearLayout>
 
-
-        <com.google.android.material.textfield.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/text_ip_et_height_editor_fragment"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/height"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"/>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="@string/enter_your_height_in_feet"
-                android:inputType="numberDecimal"
-                android:maxLines="2"/>
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:id="@+id/btn_height_decrement"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/background_circle_button"
+                    android:textSize="22sp"
+                    android:text="@string/decrement"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tv_height_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/initial_weight_value"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_height_increment"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:background="@drawable/background_circle_button"
+                    android:textSize="22sp"
+                    android:text="@string/increment"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -162,34 +191,25 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_margin="10dp">-->
-
-<!--            <com.google.android.material.textfield.TextInputEditText-->
-<!--                android:id="@+id/text_ip_et_date_editor_fragment"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:hint="@string/enter_date"-->
-<!--                android:inputType="date"-->
-<!--                android:maxLines="2"/>-->
-
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
-
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <DatePicker
             android:id="@+id/date_picker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
             android:layout_marginTop="10dp"/>
+        </RelativeLayout>
 
         <Button
             android:id="@+id/btn_get_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:background="@drawable/background_rectangle_button"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
             android:text="@string/get_date"/>
 
         <TextView
@@ -197,7 +217,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"/>
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"/>
 
     </LinearLayout>
 

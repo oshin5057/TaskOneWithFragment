@@ -41,15 +41,17 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
     private TextInputEditText mEmailEditTextEditorFragment;
     private TextInputEditText mAddressEditTextEditorFragment;
 //    private TextInputEditText mWeightEditTextEditorFragment;
-    private TextInputEditText mHeightEditTextEditorFragment;
+//    private TextInputEditText mHeightEditTextEditorFragment;
     private TextInputEditText mPhoneEditTextEditorFragment;
 
     private DatePicker mDatePicker;
     private Button mBTNGetDate;
     private TextView mTVDateFromDatePicker;
     private TextView mWeightTextView;
+    private TextView mTVHeight;
 
     private Double mWeight = 0.0;
+    private Double mHeight = 0.0;
 
     private boolean mItemHasChanged = false;
 
@@ -90,15 +92,19 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
         mEmailEditTextEditorFragment = view.findViewById(R.id.text_ip_et_email_editor_fragment);
         mAddressEditTextEditorFragment = view.findViewById(R.id.text_ip_et_address_editor_fragment);
 //        mWeightEditTextEditorFragment = view.findViewById(R.id.text_ip_et_weight_editor_fragment);
-        mHeightEditTextEditorFragment = view.findViewById(R.id.text_ip_et_height_editor_fragment);
+//        mHeightEditTextEditorFragment = view.findViewById(R.id.text_ip_et_height_editor_fragment);
         mPhoneEditTextEditorFragment = view.findViewById(R.id.text_ip_et_phone_no_editor_fragment);
 
         mDatePicker = view.findViewById(R.id.date_picker);
         mBTNGetDate = view.findViewById(R.id.btn_get_date);
         mTVDateFromDatePicker = view.findViewById(R.id.tv_date_from_date_picker);
         mWeightTextView = view.findViewById(R.id.weight_text_view);
-        Button mIncrementButton = view.findViewById(R.id.increment_button);
-        Button mDecrementButton = view.findViewById(R.id.decrement_button);
+        Button mBTNWeightIncrement = view.findViewById(R.id.btn_weight_increment);
+        Button mBTNWeightDecrement = view.findViewById(R.id.btn_weight_decrement);
+
+        mTVHeight = view.findViewById(R.id.tv_height_value);
+        Button mBTNHeightIncrement = view.findViewById(R.id.btn_height_increment);
+        Button mBTNHeightDecrement = view.findViewById(R.id.btn_height_decrement);
 
         mFirstNameEditTextEditorFragment.setOnTouchListener(mTouchListener);
         mLastNameEditTextEditorFragment.setOnTouchListener(mTouchListener);
@@ -106,7 +112,7 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
         mAddressEditTextEditorFragment.setOnTouchListener(mTouchListener);
 //        mWeightEditTextEditorFragment.setOnTouchListener(mTouchListener);
 //        mWeightTextView.setOnTouchListener(mTouchListener);
-        mHeightEditTextEditorFragment.setOnTouchListener(mTouchListener);
+//        mHeightEditTextEditorFragment.setOnTouchListener(mTouchListener);
         mPhoneEditTextEditorFragment.setOnTouchListener(mTouchListener);
 
         mDatePicker.setOnTouchListener(mTouchListener);
@@ -118,20 +124,36 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
             }
         });
 
-        mIncrementButton.setOnClickListener(new View.OnClickListener() {
+        mBTNWeightIncrement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mWeight = mWeight + 1.0;
                 displayWeight(mWeight);
             }
         });
-
-        mDecrementButton.setOnClickListener(new View.OnClickListener() {
+        mBTNWeightDecrement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mWeight > 0){
+                if (mWeight > 0.0){
                     mWeight = mWeight - 1.0;
                     displayWeight(mWeight);
+                }
+            }
+        });
+
+        mBTNHeightIncrement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mHeight = mHeight + 1.0;
+                displayHeight(mHeight);
+            }
+        });
+        mBTNHeightDecrement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mHeight >0.0){
+                    mHeight = mHeight - 1.0;
+                    displayHeight(mHeight);
                 }
             }
         });
@@ -141,6 +163,10 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
 
     private void displayWeight(Double weight) {
         mWeightTextView.setText(String.valueOf(weight));
+    }
+
+    private void displayHeight(Double height){
+        mTVHeight.setText(String.valueOf(height));
     }
 
     public String getCurrentDate(){
@@ -185,7 +211,8 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
         String address = mAddressEditTextEditorFragment.getText().toString().trim();
 //        String weight = mWeightEditTextEditorFragment.getText().toString().trim();
         String weight = mWeightTextView.getText().toString().trim();
-        String height = mHeightEditTextEditorFragment.getText().toString().trim();
+//        String height = mHeightEditTextEditorFragment.getText().toString().trim();
+        String height = mTVHeight.getText().toString().trim();
         String phone = mPhoneEditTextEditorFragment.getText().toString().trim();
         String date = mTVDateFromDatePicker.getText().toString().trim();
 
@@ -282,7 +309,8 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
             mAddressEditTextEditorFragment.setText(address);
 //            mWeightEditTextEditorFragment.setText(Double.toString(weight));
             mWeightTextView.setText(Double.toString(weight));
-            mHeightEditTextEditorFragment.setText(Double.toString(height));
+//            mHeightEditTextEditorFragment.setText(Double.toString(height));
+            mTVHeight.setText(Double.toString(height));
             mPhoneEditTextEditorFragment.setText(phone);
 //            mDateEditTextEditorFragment.setText(dateTime);
             mTVDateFromDatePicker.setText(dateTime);
@@ -299,8 +327,9 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
         mEmailEditTextEditorFragment.setText("");
         mAddressEditTextEditorFragment.setText("");
 //        mWeightEditTextEditorFragment.setText("");
-//        mWeightTextView.setText("");
-        mHeightEditTextEditorFragment.setText("");
+        mWeightTextView.setText("");
+//        mHeightEditTextEditorFragment.setText("");
+        mTVHeight.setText("");
         mPhoneEditTextEditorFragment.setText("");
         mTVDateFromDatePicker.setText("");
 
