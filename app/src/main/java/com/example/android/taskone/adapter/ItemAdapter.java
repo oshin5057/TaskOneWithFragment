@@ -94,7 +94,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> im
                     List<Item> filteredList = new ArrayList<>();
                     for (Item row : items){
 
-                        String dateInString = row.date.toString();
+                        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+                        String dateInString = dateFormat.format(row.date);
                         String weightInString = row.weight.toString();
                         String heightInString = row.height.toString();
 

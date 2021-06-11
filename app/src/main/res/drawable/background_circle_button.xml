@@ -6,7 +6,7 @@
         android:color="@color/colorAccent"/>
 
     <size
-        android:width="37dp"
-        android:height="37dp"/>
+        android:width="@dimen/thirty_seven_dp"
+        android:height="@dimen/thirty_seven_dp"/>
 
 </shape>

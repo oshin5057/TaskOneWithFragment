@@ -40,8 +40,6 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
     private TextInputEditText mLastNameEditTextEditorFragment;
     private TextInputEditText mEmailEditTextEditorFragment;
     private TextInputEditText mAddressEditTextEditorFragment;
-//    private TextInputEditText mWeightEditTextEditorFragment;
-//    private TextInputEditText mHeightEditTextEditorFragment;
     private TextInputEditText mPhoneEditTextEditorFragment;
 
     private DatePicker mDatePicker;
@@ -66,7 +64,7 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         View view =  inflater.inflate(R.layout.fragment_editor, container, false);
 
         Bundle bundle = this.getArguments();
@@ -91,8 +89,6 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
         mLastNameEditTextEditorFragment = view.findViewById(R.id.text_ip_et_last_name_editor_fragment);
         mEmailEditTextEditorFragment = view.findViewById(R.id.text_ip_et_email_editor_fragment);
         mAddressEditTextEditorFragment = view.findViewById(R.id.text_ip_et_address_editor_fragment);
-//        mWeightEditTextEditorFragment = view.findViewById(R.id.text_ip_et_weight_editor_fragment);
-//        mHeightEditTextEditorFragment = view.findViewById(R.id.text_ip_et_height_editor_fragment);
         mPhoneEditTextEditorFragment = view.findViewById(R.id.text_ip_et_phone_no_editor_fragment);
 
         mDatePicker = view.findViewById(R.id.date_picker);
@@ -110,9 +106,6 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
         mLastNameEditTextEditorFragment.setOnTouchListener(mTouchListener);
         mEmailEditTextEditorFragment.setOnTouchListener(mTouchListener);
         mAddressEditTextEditorFragment.setOnTouchListener(mTouchListener);
-//        mWeightEditTextEditorFragment.setOnTouchListener(mTouchListener);
-//        mWeightTextView.setOnTouchListener(mTouchListener);
-//        mHeightEditTextEditorFragment.setOnTouchListener(mTouchListener);
         mPhoneEditTextEditorFragment.setOnTouchListener(mTouchListener);
 
         mDatePicker.setOnTouchListener(mTouchListener);
@@ -209,9 +202,7 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
         String lastName = mLastNameEditTextEditorFragment.getText().toString().trim();
         String email = mEmailEditTextEditorFragment.getText().toString().trim();
         String address = mAddressEditTextEditorFragment.getText().toString().trim();
-//        String weight = mWeightEditTextEditorFragment.getText().toString().trim();
         String weight = mWeightTextView.getText().toString().trim();
-//        String height = mHeightEditTextEditorFragment.getText().toString().trim();
         String height = mTVHeight.getText().toString().trim();
         String phone = mPhoneEditTextEditorFragment.getText().toString().trim();
         String date = mTVDateFromDatePicker.getText().toString().trim();
@@ -307,12 +298,9 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
             mLastNameEditTextEditorFragment.setText(lastName);
             mEmailEditTextEditorFragment.setText(email);
             mAddressEditTextEditorFragment.setText(address);
-//            mWeightEditTextEditorFragment.setText(Double.toString(weight));
             mWeightTextView.setText(Double.toString(weight));
-//            mHeightEditTextEditorFragment.setText(Double.toString(height));
             mTVHeight.setText(Double.toString(height));
             mPhoneEditTextEditorFragment.setText(phone);
-//            mDateEditTextEditorFragment.setText(dateTime);
             mTVDateFromDatePicker.setText(dateTime);
 
         }
@@ -326,9 +314,7 @@ public class EditorFragment extends Fragment implements LoaderManager.LoaderCall
         mLastNameEditTextEditorFragment.setText("");
         mEmailEditTextEditorFragment.setText("");
         mAddressEditTextEditorFragment.setText("");
-//        mWeightEditTextEditorFragment.setText("");
         mWeightTextView.setText("");
-//        mHeightEditTextEditorFragment.setText("");
         mTVHeight.setText("");
         mPhoneEditTextEditorFragment.setText("");
         mTVDateFromDatePicker.setText("");

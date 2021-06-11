@@ -11,16 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
-        android:textSize="20sp"
+        android:textSize="@dimen/twenty_sp"
         android:hint="@string/search"
-        android:layout_margin="20dp"/>
+        android:layout_margin="@dimen/twenty_dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_search_fragment"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="@dimen/thirty_dp"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_search_fragment"
@@ -28,8 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="10dp"
-        app:elevation="4dp"
+        android:layout_margin="@dimen/ten_dp"
+        app:elevation="@dimen/four_dp"
         app:tint="@android:color/white"
         android:src="@drawable/ic_round_add_24"/>
 

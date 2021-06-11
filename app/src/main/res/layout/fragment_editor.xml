@@ -14,7 +14,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="@dimen/ten_dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/text_ip_et_first_name_editor_fragment"
@@ -28,7 +28,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="@dimen/ten_dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/text_ip_et_last_name_editor_fragment"
@@ -42,7 +42,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="@dimen/ten_dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/text_ip_et_email_editor_fragment"
@@ -56,7 +56,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="@dimen/ten_dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/text_ip_et_address_editor_fragment"
@@ -72,14 +72,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:padding="@dimen/sixteen_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/weight"
                 android:layout_gravity="center_horizontal"
-                android:textSize="18sp"/>
+                android:textSize="@dimen/eighteen_sp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -89,10 +89,10 @@
 
                 <Button
                     android:id="@+id/btn_weight_decrement"
-                    android:layout_width="37dp"
-                    android:layout_height="37dp"
+                    android:layout_width="@dimen/thirty_seven_dp"
+                    android:layout_height="@dimen/thirty_seven_dp"
                     android:background="@drawable/background_circle_button"
-                    android:textSize="22sp"
+                    android:textSize="@dimen/twenty_two_sp"
                     android:text="@string/decrement"
                     android:textColor="@android:color/white"
                     android:gravity="center"/>
@@ -102,18 +102,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="@dimen/twenty_dp"
+                    android:layout_marginEnd="@dimen/twenty_dp"
                     android:text="@string/initial_weight_value"
                     android:textColor="@android:color/black"
-                    android:textSize="22sp" />
+                    android:textSize="@dimen/twenty_two_sp" />
 
                 <Button
                     android:id="@+id/btn_weight_increment"
-                    android:layout_width="37dp"
-                    android:layout_height="37dp"
+                    android:layout_width="@dimen/thirty_seven_dp"
+                    android:layout_height="@dimen/thirty_seven_dp"
                     android:background="@drawable/background_circle_button"
-                    android:textSize="22sp"
+                    android:textSize="@dimen/twenty_two_sp"
                     android:text="@string/increment"
                     android:textColor="@android:color/white"
                     android:gravity="center"/>
@@ -125,14 +125,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:padding="@dimen/sixteen_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/height"
                 android:layout_gravity="center_horizontal"
-                android:textSize="18sp"/>
+                android:textSize="@dimen/eighteen_sp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -142,10 +142,10 @@
 
                 <Button
                     android:id="@+id/btn_height_decrement"
-                    android:layout_width="37dp"
-                    android:layout_height="37dp"
+                    android:layout_width="@dimen/thirty_seven_dp"
+                    android:layout_height="@dimen/thirty_seven_dp"
                     android:background="@drawable/background_circle_button"
-                    android:textSize="22sp"
+                    android:textSize="@dimen/twenty_two_sp"
                     android:text="@string/decrement"
                     android:textColor="@android:color/white"
                     android:gravity="center"/>
@@ -155,18 +155,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="@dimen/twenty_dp"
+                    android:layout_marginEnd="@dimen/twenty_dp"
                     android:text="@string/initial_weight_value"
                     android:textColor="@android:color/black"
-                    android:textSize="22sp" />
+                    android:textSize="@dimen/twenty_two_sp" />
 
                 <Button
                     android:id="@+id/btn_height_increment"
-                    android:layout_width="37dp"
-                    android:layout_height="37dp"
+                    android:layout_width="@dimen/thirty_seven_dp"
+                    android:layout_height="@dimen/thirty_seven_dp"
                     android:background="@drawable/background_circle_button"
-                    android:textSize="22sp"
+                    android:textSize="@dimen/twenty_two_sp"
                     android:text="@string/increment"
                     android:textColor="@android:color/white"
                     android:gravity="center"/>
@@ -178,7 +178,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:layout_margin="@dimen/ten_dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/text_ip_et_phone_no_editor_fragment"
@@ -199,7 +199,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="@dimen/ten_dp"/>
         </RelativeLayout>
 
         <Button
@@ -217,9 +217,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:textSize="20sp"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="20dp"/>
+            android:textSize="@dimen/twenty_sp"
+            android:layout_margin="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/twenty_dp"/>
 
     </LinearLayout>
 

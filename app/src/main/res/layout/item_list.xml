@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="10dp"
-    app:cardElevation="4dp"
-    app:cardCornerRadius="5dp">
+    android:layout_margin="@dimen/ten_dp"
+    app:cardElevation="@dimen/four_dp"
+    app:cardCornerRadius="@dimen/five_dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:layout_margin="@dimen/ten_dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -22,15 +22,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginEnd="@dimen/five_dp"
+            android:layout_marginTop="@dimen/five_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/first_name"
                 android:textColor="@android:color/black"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"/>
 
             <TextView
@@ -39,9 +39,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/first_name"
                 android:textColor="@color/colorAccent"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"
-                android:layout_marginStart="20dp"/>
+                android:layout_marginStart="@dimen/twenty_dp"/>
 
         </LinearLayout>
 
@@ -49,15 +49,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginEnd="@dimen/five_dp"
+            android:layout_marginTop="@dimen/five_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/last_name"
                 android:textColor="@android:color/black"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"/>
 
             <TextView
@@ -66,9 +66,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/last_name"
                 android:textColor="@color/colorAccent"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"
-                android:layout_marginStart="20dp"/>
+                android:layout_marginStart="@dimen/twenty_dp"/>
 
         </LinearLayout>
 
@@ -76,15 +76,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginEnd="@dimen/five_dp"
+            android:layout_marginTop="@dimen/five_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/email_id"
                 android:textColor="@android:color/black"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"/>
 
             <TextView
@@ -93,9 +93,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/email_id"
                 android:textColor="@color/colorAccent"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"
-                android:layout_marginStart="40dp"/>
+                android:layout_marginStart="@dimen/forty_dp"/>
 
         </LinearLayout>
 
@@ -104,15 +104,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginEnd="@dimen/five_dp"
+            android:layout_marginTop="@dimen/five_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/address"
                 android:textColor="@android:color/black"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"/>
 
             <TextView
@@ -121,10 +121,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/address"
                 android:textColor="@color/colorAccent"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"
                 android:maxLines="3"
-                android:layout_marginStart="40dp"/>
+                android:layout_marginStart="@dimen/forty_dp"/>
 
         </LinearLayout>
 
@@ -132,15 +132,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginEnd="@dimen/five_dp"
+            android:layout_marginTop="@dimen/five_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/weight"
                 android:textColor="@android:color/black"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"/>
 
             <TextView
@@ -149,9 +149,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/_50"
                 android:textColor="@color/colorAccent"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"
-                android:layout_marginStart="13dp"/>
+                android:layout_marginStart="@dimen/thirteen_dp"/>
 
         </LinearLayout>
 
@@ -159,15 +159,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginEnd="@dimen/five_dp"
+            android:layout_marginTop="@dimen/five_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/height"
                 android:textColor="@android:color/black"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"/>
 
             <TextView
@@ -176,9 +176,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/height_5_3"
                 android:textColor="@color/colorAccent"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="@dimen/ten_dp"/>
 
         </LinearLayout>
 
@@ -186,15 +186,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginEnd="@dimen/five_dp"
+            android:layout_marginTop="@dimen/five_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/phone_no"
                 android:textColor="@android:color/black"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"/>
 
             <TextView
@@ -203,9 +203,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/p_no"
                 android:textColor="@color/colorAccent"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"
-                android:layout_marginStart="30dp"/>
+                android:layout_marginStart="@dimen/thirty_dp"/>
 
         </LinearLayout>
 
@@ -214,15 +214,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginEnd="@dimen/five_dp"
+            android:layout_marginTop="@dimen/five_dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/date"
                 android:textColor="@android:color/black"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"/>
 
             <TextView
@@ -231,9 +231,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/date_value"
                 android:textColor="@color/colorAccent"
-                android:textSize="15sp"
+                android:textSize="@dimen/fifteen_sp"
                 android:textStyle="normal"
-                android:layout_marginStart="65dp"/>
+                android:layout_marginStart="@dimen/sixty_five_dp"/>
 
         </LinearLayout>
         </LinearLayout>
@@ -242,22 +242,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginStart="2dp"
+            android:layout_marginStart="@dimen/two_dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true">
 
             <ImageButton
                 android:id="@+id/btn_item_delete"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/forty_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:src="@drawable/ic_baseline_delete_forever_24"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
                 android:background="@android:color/white"/>
 
             <ImageButton
                 android:id="@+id/btn_item_edit"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/forty_dp"
+                android:layout_height="@dimen/forty_dp"
                 android:src="@drawable/ic_baseline_edit_24"
                 android:background="@android:color/white"
                 android:text="@string/edit"/>

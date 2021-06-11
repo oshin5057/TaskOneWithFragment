@@ -25,7 +25,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -37,13 +36,11 @@ public class SearchFragment extends Fragment implements ItemListener {
     List<Item> items = new ArrayList<>();
     EditText mETSearch;
     FloatingActionButton fabSearchFragment;
-    Uri mCurrentUri;
-    int id;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         View view = inflater.inflate(R.layout.fragment_search, container, false);
 
         mRecyclerView = view.findViewById(R.id.recycler_view_fragment);
